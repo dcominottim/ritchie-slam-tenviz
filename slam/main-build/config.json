@@ -1,0 +1,33 @@
+{
+  "dockerImageBuilder": "ritclizup/rit-shell-bat-builder",
+  "inputs": [
+    {
+      "cache": {
+        "active": true,
+        "newLabel": "Type new value. ",
+        "qty": 3
+      },
+      "default": ".",
+      "label": "Type the build context root dir",
+      "name": "rit_root_dir",
+      "required": true,
+      "tutorial": "The directory that will be used as build context for the 'docker build' command",
+      "type": "text"
+    },
+    {
+      "cache": {
+        "active": true,
+        "newLabel": "Type new value. ",
+        "qty": 3
+      },
+      "default": "11.2",
+      "label": "Type the cudagl version to be used as tag",
+      "name": "rit_cudagl_version",
+      "required": true,
+      "tutorial": "The cudagl version to be used as tag for the Docker image",
+      "type": "text"
+    }
+  ],
+  "template": "shell-bat",
+  "templateRelease:": "2.16.2"
+}
